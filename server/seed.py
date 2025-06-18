@@ -7,7 +7,7 @@ def seed_data():
     db.drop_all()
     db.create_all()
 
-    r1 = Restaurant(name="Pizza Inn", address="123 Main St")
+    r1 = Restaurant(name="Pizza Inn", address="Moi Avenue")
     r2 = Restaurant(name="Pizza Hut", address="456 Oak Ave")
     db.session.add_all([r1, r2])
 
