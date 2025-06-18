@@ -7,8 +7,8 @@ def seed_data():
     db.drop_all()
     db.create_all()
 
-    r1 = Restaurant(name="Kiki's Pizza", address="123 Main St")
-    r2 = Restaurant(name="Pizza Palace", address="456 Oak Ave")
+    r1 = Restaurant(name="Pizza Inn", address="123 Main St")
+    r2 = Restaurant(name="Pizza ", address="456 Oak Ave")
     db.session.add_all([r1, r2])
 
     p1 = Pizza(name="Margherita", ingredients="Dough, Tomato Sauce, Cheese, Basil")
